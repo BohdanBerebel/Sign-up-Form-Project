@@ -1,2 +1,1 @@
-# Sign-up-Form-Project
-Sign-up Form
+BebasNeue-Regular font originates form: https://fonts.google.com/specimen/Bebas+Neue

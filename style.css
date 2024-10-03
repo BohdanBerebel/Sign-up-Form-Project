@@ -1,0 +1,103 @@
+@font-face {
+    font-family: BebasNeue-Regular;
+    src: url(./font/BebasNeue-Regular.woff2);
+  }
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.left-side {
+    display: flex;
+    flex: 1 1 0;
+    text-align: center;
+    position: relative;
+}
+
+.left-side > img {
+    height: 100vh;
+    width: 100%;
+}
+
+.left-side > div {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    opacity: 0.6;
+    background-color: lightgray;
+    font-size: clamp(1rem, 5vw, 7rem + 10vw);
+    color: grey;
+    font-family: BebasNeue-Regular;
+    gap: 1rem;
+    overflow: clip;
+    max-width: 100%
+}
+
+.left-side > div > img {
+    max-width: 25%;
+}
+
+.left-side > p {
+    font-size: clamp(1px, 1vw, 20px + 10vw);
+    color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 9vw;
+    overflow: hidden;
+    max-width: 50%;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 0;
+    width: 100vh;
+    justify-content:space-evenly;
+    padding: 2rem;
+}
+
+.right-top {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-indent:1rem
+}
+
+form > div > div {
+    display: inline-block;
+    width: 35%;
+    overflow: hidden;
+}
+
+form > div > div > div {
+    display: flex;
+    flex-direction: column;
+    border: red 1px solid;
+    margin: 0.8rem;
+    overflow: hidden;
+}
+
+div{
+    border: blue 1px solid;
+}
+
+.right-center {
+    margin: 2rem 0;
+}
+
+.right-center > p {
+    margin: 0.8rem;
+}
+
+button {
+    background-color: rgba(89,109,72,255);
+    border-radius: 5px;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-weight:900;
+    font-size: 1.2rem;
+}
