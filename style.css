@@ -57,40 +57,93 @@ body {
     flex-direction: column;
     flex: 2 1 0;
     width: 100vh;
-    justify-content:space-evenly;
+    justify-content:center;
+}
+
+.right-side > div {
     padding: 2rem;
+    flex: 1 1 auto;
 }
 
 .right-top {
     font-size: 1.5rem;
     font-weight: 700;
-    text-indent:1rem
+    text-indent:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+form > div {
+    flex-wrap: wrap;
+    align-items:start;
+    justify-items: center;
+    display: flex;
 }
 
 form > div > div {
     display: inline-block;
     width: 35%;
     overflow: hidden;
+    /* border: yellow 5px solid; */
 }
 
 form > div > div > div {
     display: flex;
     flex-direction: column;
-    border: red 1px solid;
-    margin: 0.8rem;
+    /* border: red 1px solid; */
+    padding: 0.8rem;
     overflow: hidden;
+    flex: 1 1 auto;
 }
 
-div{
+/* div{
     border: blue 1px solid;
-}
+} */
 
 .right-center {
-    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    background-color: snow;
+    justify-content: center;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .right-center > p {
-    margin: 0.8rem;
+    margin: 0 0 0 0.9rem;
+    font-size: 1.5rem;
+}
+
+input:user-invalid + span::after {
+    content: "* Passwords do not match";
+    overflow: hidden;
+    font-size: 0.8rem;
+    color: red;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #393939;
+}
+
+input:user-valid {
+    border-color: lightgreen;
+}
+
+input:user-invalid {
+    border-color: rgb(253, 76, 76);
+}
+
+input:focus {
+    box-shadow: 0 0 10px 5px lightblue;
+}
+
+input {
+    border-radius: 7px;
+    height: 1.5rem;
+    font-size: 1.2rem;
 }
 
 button {
@@ -100,4 +153,8 @@ button {
     padding: 0.8rem 2rem;
     font-weight:900;
     font-size: 1.2rem;
+}
+
+.right-top, .right-bottom{
+    background-color: ghostwhite;
 }
